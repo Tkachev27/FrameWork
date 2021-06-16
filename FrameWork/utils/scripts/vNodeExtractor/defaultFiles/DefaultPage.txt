@@ -1,0 +1,31 @@
+import { Page } from '@core/Page'
+import { StateManager } from '@core/StateManager'
+
+IMPORT
+
+
+export class Page1 extends Page {
+    componentList: Array<any> = []
+    name: string
+
+    constructor(name: string) {
+        super(name)
+        this.name = name
+    }
+
+    createComponents() {
+        this.componentList = []
+
+        CREATIONS
+     
+        for (let i = 0; i < this.componentList.length; i++) {
+            const data = StateManager.getDataFromStorage(`${this.name}-${i}`)
+            if (data) {
+                this.componentList[i].activeNode = data
+            }
+        }
+    }
+    componentInit() {
+        super.componentInit(this.componentList)
+    }
+}

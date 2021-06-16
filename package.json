@@ -1,0 +1,77 @@
+{
+    "name": "framework",
+    "version": "1.0.0",
+    "description": "JS framework for SPA",
+    "main": "bundle.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "cross-env NODE_ENV=development webpack-dev-server --open --history-api-fallback",
+        "build": "cross-env NODE_ENV=production webpack --mode production",
+        "createApp": "node FrameWork/utils/scripts/vNodeExtractor/createApp.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": ""
+    },
+    "_moduleAliases": {
+        "@": "src/TypeScripts/",
+        "@core": "FrameWork/"
+    },
+    "keywords": [
+        "JS",
+        "TypeScript",
+        "OOP",
+        "HTML",
+        "CSS",
+        "SCSS",
+        "Web",
+        "application"
+    ],
+    "author": "Mikhail Tkachev <tkachev0927@gmail.com>",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Tkachev27/FrameWork"
+    },
+    "homepage": "https://github.com/Tkachev27/FrameWork#readme",
+    "browserslist": "> 0.25%, not dead",
+    "devDependencies": {
+        "@babel/cli": "^7.10.5",
+        "@babel/core": "^7.10.5",
+        "@babel/plugin-proposal-class-properties": "^7.10.4",
+        "@babel/plugin-transform-runtime": "^7.13.10",
+        "@babel/preset-env": "^7.10.4",
+        "@babel/preset-typescript": "^7.10.4",
+        "autoprefixer": "^9.8.5",
+        "babel-loader": "^8.1.0",
+        "clean-webpack-plugin": "^3.0.0",
+        "copy-webpack-plugin": "^6.0.3",
+        "cross-env": "^7.0.2",
+        "css-loader": "^3.6.0",
+        "extract-loader": "^5.1.0",
+        "file-loader": "^6.0.0",
+        "html-loader": "^1.1.0",
+        "html-webpack-plugin": "^4.3.0",
+        "mini-css-extract-plugin": "^0.9.0",
+        "postcss-loader": "^3.0.0",
+        "sass": "^1.26.10",
+        "sass-loader": "^9.0.2",
+        "source-map-loader": "^1.0.1",
+        "ts-loader": "^8.0.1",
+        "typescript": "^3.9.7",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.12",
+        "webpack-dev-server": "^3.11.0",
+        "@babel/polyfill": "^7.12.1",
+        "@babel/runtime": "^7.13.10",
+        "babel-preset-es2015": "^6.24.1",
+        "cloc": "^2.7.0",
+        "expess": "0.0.1-security",
+        "fs": "0.0.1-security",
+        "module-alias": "^2.2.2",
+        "nodemon": "^2.0.7",
+        "serviceworker-webpack-plugin": "^1.0.1"
+    },
+    "dependencies": {
+        "request": "^2.88.2"
+    }
+}

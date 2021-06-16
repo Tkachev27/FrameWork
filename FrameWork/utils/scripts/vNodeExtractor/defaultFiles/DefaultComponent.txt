@@ -1,0 +1,17 @@
+import { Component } from '@core/Component'
+import { VNode } from '@core/interfaces'
+import { StateManager } from '@core/StateManager'
+import { initialVNode } from './initialVNode'
+
+export class Component1 extends Component {
+    activeNode: VNode
+
+    constructor(dynamic: boolean, initialVnode = initialVNode) {
+        super(dynamic)
+        this.activeNode = JSON.parse(JSON.stringify(initialVnode))
+    }
+
+    init() {
+        super.install(this.activeNode, this.parent)
+    }
+}

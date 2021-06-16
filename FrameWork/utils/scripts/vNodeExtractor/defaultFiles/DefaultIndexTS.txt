@@ -1,0 +1,19 @@
+import { Router } from '@core/Router'
+IMPORT_STYLES
+IMPORT_NAVIGATION
+IMPORT_PAGES
+
+
+
+CREATE_NAVIGATION
+
+
+CREATE_PAGES
+
+
+
+new Router(navigation, [
+   LINKS
+  
+])
+

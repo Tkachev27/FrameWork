@@ -1,0 +1,9 @@
+{
+    "name": "FrameWork",
+    "short_name": "FW",
+    "theme_color": "#2692e8",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "."
+}

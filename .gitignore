@@ -1,0 +1,5 @@
+#Files that will be ignored by git
+info.txt
+node_modules
+dist
+src/Garbage

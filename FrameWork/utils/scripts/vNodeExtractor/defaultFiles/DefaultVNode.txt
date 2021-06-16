@@ -1,0 +1,3 @@
+import { VNode } from '@core/interfaces'
+
+export const initialVNode: VNode = 

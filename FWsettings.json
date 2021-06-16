@@ -1,0 +1,12 @@
+{
+    "template": "input data/template.html",
+
+    "pages": [
+        {
+            "name": "Home",
+            "components": ["Banner"],
+            "adress": "src/TypeScripts/HomePage",
+            "link": "/"
+        }
+    ]
+}
